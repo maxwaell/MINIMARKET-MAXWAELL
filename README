@@ -1,0 +1,29 @@
+Bem-vindo ao MaxMarket Virtual, um projeto que simula uma loja online simples e funcional, perfeita para quem quer comprar produtos do dia a dia sem sair de casa! Essa é a Fase 2 do projeto, onde implementamos uma interface mais interativa, com uma barra de pesquisa, carrinho de compras e notificações para tornar a experiência do usuário ainda mais legal. 
+
+--Sobre o Projeto
+
+O MaxMarket Virtual é um site de e-commerce fictício que oferece produtos em três categorias principais: Frutas e Verduras, Limpeza e Higiene. Além disso, temos alguns serviços legais, como entrega em domicílio e montagem de cestas personalizadas. A ideia aqui é criar uma experiência fluida e intuitiva, com uma interface limpa e funcionalidades que ajudam o usuário a encontrar e comprar produtos rapidamente.
+
+--O que você vai encontrar aqui?
+Barra de Pesquisa: Digite o nome de um produto e veja os resultados aparecerem na hora!
+Carrinho de Compras: Adicione produtos e serviços ao carrinho e finalize sua compra com poucos cliques.
+Notificações: Um toast (aquela notificação fofa) aparece sempre que você adiciona algo ao carrinho.
+Tabs de Categorias: Filtre os produtos por categoria (ou veja todos de uma vez).
+Modal Interativo: Veja os itens do seu carrinho em um modal, com opções para ajustar quantidades, remover itens ou esvaziar tudo.
+
+--Funcionalidades
+
+Aqui está o que o MaxMarket Virtual tem de melhor:
+
+
+Filtro por Categorias: No header, há tabs (botões) para filtrar os produtos. Clique em "Frutas e Verduras", "Limpeza", "Higiene" ou "Todos" para ver os produtos daquela categoria.
+Adicionar ao Carrinho: Cada produto tem um botão "Comprar". Você pode ajustar a quantidade com os botões "+" e "-" antes de adicionar. Quando clicar em "Comprar", o item vai para o carrinho, e uma notificação aparece no canto inferior direito da tela dizendo "Adicionado X unidade(s) ao carrinho!".
+Pesquisa de Produtos: Na barra de pesquisa no topo, você pode digitar o nome de qualquer produto (ex.: "Maçã", "Shampoo", "Detergente"). Os resultados aparecem automaticamente em uma seção de "Resultados da Pesquisa", e o conteúdo principal some temporariamente para deixar o foco nos resultados. Se você apagar a busca, volta tudo ao normal!
+Carrinho de Compras:
+Clique em "Ver Carrinho" no topo para abrir um modal com os itens que você adicionou.
+No modal, você pode aumentar ou diminuir a quantidade de cada item, remover itens específicos ou esvaziar o carrinho inteiro.
+O total da compra é atualizado automaticamente enquanto você ajusta os itens.
+Finalizar Compra: Você pode finalizar a compra direto pelo botão "Finalizar Compra" no topo ou dentro do modal do carrinho. Se o carrinho estiver vazio, um alerta avisa que não há nada para comprar. Se tiver itens, um alerta confirma que a compra foi finalizada com sucesso, e o carrinho é esvaziado.
+Serviços: Na seção "Nossos Serviços", você pode contratar serviços como "Entrega em Domicílio" ou "Montagem de Cestas". Eles também vão para o carrinho, e você pode gerenciá-los da mesma forma que os produtos.
+
+Para a primeira frase, o projeto foi desenvolvimento apenas com html puro, porem, preparado para receber o css e js!
