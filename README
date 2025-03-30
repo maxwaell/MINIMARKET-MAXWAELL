@@ -27,3 +27,27 @@ Finalizar Compra: Você pode finalizar a compra direto pelo botão "Finalizar Co
 Serviços: Na seção "Nossos Serviços", você pode contratar serviços como "Entrega em Domicílio" ou "Montagem de Cestas". Eles também vão para o carrinho, e você pode gerenciá-los da mesma forma que os produtos.
 
 Para a primeira frase, o projeto foi desenvolvimento apenas com html puro, porem, preparado para receber o css e js!
+
+Bem-vindo ao MaxMarket Virtual, uma loja online prática e intuitiva para suas compras do dia a dia! Essa é a Fase 2 do nosso projeto, onde deixamos tudo mais dinâmico e interativo, adicionando uma barra de pesquisa, carrinho de compras e notificações fofas para melhorar a experiência de quem usa.
+
+Sobre o Projeto
+O MaxMarket Virtual é um site de e-commerce fictício que traz produtos essenciais em três categorias: Frutas e Verduras, Limpeza e Higiene. Também oferecemos serviços como entrega em domicílio e montagem de cestas personalizadas. Nosso objetivo é fazer suas compras serem rápidas e fáceis, com uma interface simples e cheia de funcionalidades legais.
+
+O que você vai encontrar aqui?
+Barra de Pesquisa: Digite o nome de um produto e veja os resultados aparecerem na hora!
+Carrinho de Compras: Adicione produtos ou serviços e finalize sua compra com poucos cliques.
+Notificações: Um aviso simpático aparece no canto da tela sempre que você adiciona algo ao carrinho.
+Tabs de Categorias: Filtre os produtos por categoria ou veja tudo de uma vez.
+Modal Interativo: Confira os itens no seu carrinho, ajuste quantidades ou remova o que não quiser.
+Funcionalidades
+Filtro por Categorias: No topo, você pode clicar nas abas "Frutas e Verduras", "Limpeza", "Higiene" ou "Todos" pra ver só os produtos daquela categoria.
+Adicionar ao Carrinho: Cada produto tem um botão "Comprar". Antes de adicionar, dá pra ajustar a quantidade com "+" e "-". Ao clicar em "Comprar", o item vai pro carrinho e uma notificação aparece dizendo "Adicionado X unidade(s) ao carrinho!".
+Pesquisa de Produtos: Na barra de pesquisa lá em cima, é só digitar o nome de um produto (tipo "Maçã" ou "Shampoo") e os resultados aparecem logo abaixo. A página principal some pra destacar os resultados, mas volta ao normal se você apagar o que digitou!
+Carrinho de Compras:
+Clique em "Ver Carrinho" pra abrir um modal com tudo que você adicionou.
+No modal, dá pra aumentar ou diminuir a quantidade, remover itens ou esvaziar tudo de uma vez.
+O total da compra atualiza na hora enquanto você mexe nos itens.
+Finalizar Compra: Você pode finalizar direto pelo botão "Finalizar Compra" no topo ou dentro do modal. Se o carrinho estiver vazio, um aviso aparece. Se tiver itens, você recebe uma confirmação de compra concluída, e o carrinho é zerado.
+Serviços: Na seção "Nossos Serviços", você pode contratar opções como entrega em domicílio ou montagem de cestas. Elas vão pro carrinho e podem ser gerenciadas igual aos produtos.
+Como o Projeto Foi Feito
+Na primeira fase, o MaxMarket Virtual foi criado só com HTML puro, já pensando em receber o CSS e o JavaScript depois. Agora, na Fase 2, trouxemos vida ao site com CSS para deixar tudo mais bonito e JavaScript pra fazer funcionar as interações, como a barra de pesquisa, o carrinho e as notificações. Tudo isso mantendo a simplicidade e a facilidade pra quem usa!
