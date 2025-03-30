@@ -5,22 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MaxMarket Virtual - Fase 2</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HTML PURO PREPARADO PARA A UTILIZAÇÃO DE CSS E JAVASCRIPT! -->
   <!-- Cabeçalho -->
   <header>
     <div class="header-container">
-      <div class="logo">Max’s<span>Marketing</span></div>
-      <!-- Links de navegação -->
-      <div class="categorias-tabs">
-        <div class="categoria-tab active" data-categoria="todos">Todos</div>
-        <div class="categoria-tab" data-categoria="frutas_e_verduras">Frutas e Verduras</div>
-        <div class="categoria-tab" data-categoria="limpeza">Limpeza</div>
-        <div class="categoria-tab" data-categoria="higiene">Higiene</div>
-      </div>
-      <div class="search-container">
-        <input type="text" class="search-input" placeholder="Pesquisar produtos..." id="search-input">
+      <div class="logo">Max<span>Market</span></div>
+      <div class="navigation">
+        <div class="categorias-tabs">
+          <div class="categoria-tab active" data-categoria="todos">Todos</div>
+          <div class="categoria-tab" data-categoria="frutas_e_verduras">Frutas e Verduras</div>
+          <div class="categoria-tab" data-categoria="nao_pereciveis">Não Perecíveis</div>
+          <div class="categoria-tab" data-categoria="limpeza_higiene">Limpeza e Higiene</div>
+        </div>
       </div>
       <div class="header-actions">
         <button id="btn-ver-carrinho" class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Ver Carrinho</button>
@@ -29,180 +27,87 @@
     </div>
   </header>
 
-  <!-- logo Banner -->
+  <!-- Hero Banner -->
   <section class="hero">
-    <div class="fruit-bg fruit-1">🍊</div>
-    <div class="fruit-bg fruit-2">🍎</div>
-    <div class="fruit-bg fruit-3">🍋</div>
-    <div class="logo-container">
-      <div class="logo-text">
+    <div class="fruit-bg fruit-1" alt="">🍊</div>
+    <div class="fruit-bg fruit-2" alt="">🍎</div>
+    <div class="fruit-bg fruit-3" alt="">🍋</div>
+    <div class="hero-container">
+      <div class="hero-text">
         <h1>Maximize sua vida</h1>
         <p>Produtos de qualidade para o seu dia a dia, com entrega rápida e preços acessíveis. Faça suas compras sem sair de casa!</p>
         <button class="btn btn-primary">Comprar Agora</button>
       </div>
-      <div class="logo-image">
-        <img src="https://via.placeholder.com/500x300" alt="Produtos frescos">
+      <div class="hero-image">
+        <img src="./images/fresh-produce.webp" alt="Cesta de produtos frescos incluindo frutas e verduras">
       </div>
     </div>
   </section>
 
-  <!-- Resultados da Pesquisa -->
-  <section class="search-results" id="search-results">
-    <h2 class="section-title">Resultados da Pesquisa</h2>
-    <div class="produtos" id="search-results-produtos"></div>
+  <!-- Seção de Promoções -->
+  <section id="promocoes">
+    <h2 class="section-title">Promoções Imperdíveis</h2>
+    <div id="carrossel">
+      <div class="carrossel-container">
+        <div class="carrossel-slide active">
+          <img src="./images/toma3.webp" alt="Tomate italiano em promoção, 1kg por R$ 6.75">
+          <div class="carrossel-caption">
+            <h3>Promoção Especial</h3>
+            <p>Descontos de até 50% em frutas e verduras!</p>
+          </div>
+        </div>
+        <div class="carrossel-slide">
+          <img src="./images/farfa2.webp" alt="Macarrão com ovos parafuso, 500g por R$ 3.20">
+          <div class="carrossel-caption">
+            <h3>Novos Produtos</h3>
+            <p>Confira nossos novos produtos não perecíveis!</p>
+          </div>
+        </div>
+        <div class="carrossel-slide">
+          <img src="./images/deterneutro.webp" alt="Detergente líquido neutro, 500ml por R$ 2.75">
+          <div class="carrossel-caption">
+            <h3>Limpeza e Higiene</h3>
+            <p>Produtos de limpeza com preços imperdíveis!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carrossel-prev">❮</button>
+      <button class="carrossel-next">❯</button>
+    </div>
   </section>
 
   <!-- Corpo principal -->
   <main id="main-content">
-    <!-- Seção de Categorias -->
     <section id="categorias">
       <h2 class="section-title">Nossos Produtos</h2>
-      
-      <!-- Produtos serão carregados aqui -->
-      <div class="produtos">
-        <!-- Frutas e Verduras -->
-        <!-- Produto 1: Maçã -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/maça.webp" alt="Maçã">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Maçã fresca, 1kg.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 5.99</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 2: Banana -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/banana.webp" alt="Banana">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Banana nanica, 1kg.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 3.50</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 3: Cenoura -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/cenoura.webp" alt="Cenoura">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Cenoura orgânica, 1kg.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 4.20</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Limpeza -->
-        <!-- Produto 4: Detergente Líquido -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/detergente.webp" alt="Detergente Líquido">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Detergente líquido concentrado, 500ml.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 2.99</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 5: Sabão em Pó -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="../images/sabaopo.webp" alt="Sabão em Pó">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Sabão em pó com enzimas ativas, 1kg.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 12.90</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 6: Desinfetante -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/desinfetante.webp" alt="Desinfetante">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Desinfetante perfumado, 2L.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 8.50</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Higiene -->
-        <!-- Produto 7: Shampoo -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/shampoo.webp" alt="Shampoo">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Shampoo para todos os tipos de cabelo, 350ml.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 9.90</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 8: Sabonete -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/sabonete.webp" alt="Sabonete">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Sabonete hidratante, 90g.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 2.50</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 9: Papel Higiênico -->
-        <div class="produto">
-          <div class="produto-img">
-            <img src="./images/papelhigi.webp" alt="Papel Higiênico">
-          </div>
-          <div class="produto-info">
-            <p class="produto-descricao">Papel higiênico folha dupla, pacote com 4 rolos.</p>
-            <div class="produto-footer">
-              <span class="produto-preco">R$ 6.99</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="produtos"></div>
     </section>
-
-    <!-- Serviços -->
     <section id="servicos">
       <h2 class="section-title">Nossos Serviços</h2>
-      <div class="servicos">
-        <!-- Serviços serão carregados aqui pelo JavaScript -->
-        <div class="servico" data-id="${servico.id}">
-          <div class="servico-icon">
-            <i class="${servico.icone}"></i>
-          </div>
-          <h3>${servico.nome} Retirada no Local</h3>
-          <p>${servico.descricao}</p>
-          <p class="servico-preco">R$ ${servico.valor.toFixed(2)}</p>
-          <button class="btn btn-outline btn-adicionar-servico" data-id="${servico.id}">Contratar</button>
+      <div class="servicos"></div>
+    </section>
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro">
+      <h2 class="section-title">Cadastre-se</h2>
+      <form id="form-cadastro">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required>
         </div>
-      </div>
-        <h3>${servico.nome} Tele Entrega</h3>
-        <p>${servico.descricao} </p>
-        <p class="servico-preco">R$ ${servico.valor.toFixed(2)}</p>
-        <button class="btn btn-outline btn-adicionar-servico" data-id="${servico.id}">Contratar</button>
-    </div>
-      </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmar-senha">Confirmar Senha</label>
+          <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
     </section>
   </main>
 
@@ -217,22 +122,22 @@
         <h3>Links Úteis</h3>
         <ul class="footer-links">
           <li><a href="#frutas_e_verduras">Frutas e Verduras</a></li>
-          <li><a href="#limpeza">Limpeza</a></li>
-          <li><a href="#higiene">Higiene</a></li>
+          <li><a href="#nao_pereciveis">Não Perecíveis</a></li>
+          <li><a href="#limpeza_higiene">Limpeza e Higiene</a></li>
           <li><a href="#servicos">Serviços</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Contato</h3>
         <ul class="footer-links">
-          <li><a href="mailto:contato@maxmarket.com">contato@maxmarketing.com</a></li>
+          <li><a href="mailto:contato@maxmarket.com">contato@maxmarket.com</a></li>
           <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
           <li><a href="#">Endereço: Av. Exemplo, 123</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 MaxMarket Virtual - Fase 1</p>
+      <p>© 2025 MaxMarket Virtual - Fase 2</p>
     </div>
   </footer>
 
@@ -245,6 +150,18 @@
       </div>
       <div class="modal-body">
         <div id="conteudo-carrinho"></div>
+        <div id="servicos-carrinho" style="display: none;">
+          <h3>Escolha uma opção de serviço:</h3>
+          <select id="opcao-servico">
+            <option value="">Selecione...</option>
+            <option value="entrega">Entrega em Domicílio (R$ 5.00)</option>
+            <option value="retirada">Retirada na Loja (Grátis)</option>
+          </select>
+          <div id="data-entrega" style="display: none;">
+            <h3>Escolha a data de entrega:</h3>
+            <input type="date" id="input-data-entrega">
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button id="btn-esvaziar-carrinho" class="btn btn-outline">Esvaziar Carrinho</button>
@@ -258,5 +175,7 @@
     <div class="toast-icon"><i class="fas fa-check"></i></div>
     <div class="toast-text">Item adicionado ao carrinho!</div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
